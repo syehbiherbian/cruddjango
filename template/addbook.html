@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block site_title %}Tambah Buku{% endblock %}
+{% block content %}
+    <form method="post" action=".">
+      {% csrf_token %}
+      {{ bookform|linebreaks}}
+
+    <input type="submit" value="Submit">
+  </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block site_title %}Detail User {{firstname}} {% endblock %}
+{% block content %}
+    <h2>Detail User</h2>
+    Email : {{email}}<br>
+    First Name : {{firstname}}<br>
+    Last Name : {{lastname}}<br>
+    Gender : {{gender}}<br>
+    Address : {{address}}<br>
+    Phone : {{phone}}<br>
+    <button type="button"><a href="/listuser">Back To List User</a></button>
+{% endblock %}

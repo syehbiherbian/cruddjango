@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block site_title %}Register User {% endblock %}
+{% block content %}
+    <form class="form-horizontal" method="post" action=".">
+      <div class="form-group">
+        {% csrf_token %}
+        {{ regisform|linebreaks}}
+      </div>
+
+
+    <input type="submit" value="Submit">
+{% endblock %}

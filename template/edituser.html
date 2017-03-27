@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block site_title %}Edit User {{firstname}} {% endblock %}
+{% block content %}
+    <form class="" action="." method="post">
+      {% csrf_token %}
+      {{ editform|linebreaks}}
+      <input type="submit" name="" value="Update">
+    </form>
+{% endblock %}
